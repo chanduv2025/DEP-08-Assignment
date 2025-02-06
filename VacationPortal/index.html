@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VACATION - EPAM Vacation Tracking System</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="icons/sun.svg" />
+  </head>
+  <body>
+    <header class="">
+      <nav class="bg-[#303240]">
+        <div class="flex flex-row text-white justify-between flex-wrap">
+          <div class="flex flex-row flex-wrap">
+            <div>
+              <img class="" src="./logo.png" alt="" />
+            </div>
+            <a
+              class="flex justify-between items-center bg-[#1D1E26] font-semibold pl-2 pr-2 border-b-3 border-blue-400"
+              href=""
+              >Dashboard</a
+            >
+            <a
+              class="flex justify-between items-center hover:bg-[#1D1E26] font-semibold pl-2 pr-2"
+              href=""
+              >Requests</a
+            >
+            <a
+              class="flex justify-between items-center hover:bg-[#1D1E26] font-semibold pl-2 pr-2"
+              href=""
+              >Balance</a
+            >
+            <a
+              class="flex justify-between items-center hover:bg-[#1D1E26] font-semibold pl-2 pr-2"
+              href=""
+              >Notifications</a
+            >
+          </div>
+          <div class="flex flex-row flex-wrap">
+            <button
+              class="flex flex-row bg-sky-500 justify-between items-center rounded-sm pl-2 pr-2 pt-0 pb-0 mt-3 mb-3"
+            >
+              <img class="invert" src="icons/plus.svg" alt="" />
+              <div class="text-sm pl-1">Add request</div>
+            </button>
+            <button class="pl-4 pr-4">
+              <img class="invert" src="icons/question.svg" alt="" />
+            </button>
+            <button class="pl-4 pr-4">
+              <img class="rounded-full h-8 w-8" src="avatar.png" alt="" />
+            </button>
+            <button class="pl-4 pr-4">
+              <img class="invert" src="icons/menu.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="shadow-xl ">
+        <div class="flex justify-start items-center">
+          <a
+            class="mr-4 text-sm text-sky-500 font-semibold border-b-[1.5px] border-blue-400 p-3"
+            href=""
+            >Personal</a
+          >
+          <a class="text-sm font-semibold" href="">Action required</a>
+          <div
+            class="bg-slate-300 rounded-full text-[10px] ml-2 pl-[5px] pr-[5px]"
+          >
+            0
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-slate-100">
+      <div class="flex justify-between p-5 pt-15">
+        <div class="text-2xl font-semibold text-slate-600">Overview</div>
+        <a class="text-sm font-medium text-sky-400">Go to Balances</a>
+      </div>
+      <!-- regular Vacation card -->
+      <div>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-4 ml-4 mt-4">
+          <div class="shadow-md bg-white p-4 rounded-md">
+            <div class="flex flex-row justify-between items-center">
+              <h2>Regular Vacation</h2>
+              <img src="icons/info.svg" alt="" />
+            </div>
+            <div class="relative flex justify-center items-center">
+              <img src="icons/circle.svg" alt="" />
+              <div class="absolute">
+                <span class="text-5xl">15</span><span class="text-3xl">d</span>
+                <div class="pl-4 text-slate-400">of 15d</div>
+              </div>
+            </div>
+          </div>
+          <!-- Overtime Vacation card -->
+          <div class="shadow-md bg-white p-4 rounded-md">
+            <div class="flex flex-row justify-between items-center">
+              <h2>Overtime Vacation</h2>
+              <img class="" src="icons/info.svg" alt="" />
+            </div>
+            <div class="relative flex justify-center items-center">
+              <img src="icons/emptycircle.svg" alt="" />
+              <div class="absolute">
+                <span class="text-5xl">0</span><span class="text-3xl">h</span>
+              </div>
+            </div>
+          </div>
+          <!-- sick leave card -->
+          <div class="shadow-md bg-white p-4 rounded-md">
+            <div class="flex flex-row justify-between items-center">
+              <h2>Sick leave</h2>
+              <img class="" src="icons/info.svg" alt="" />
+            </div>
+            <div class="relative flex justify-center items-center">
+              <img src="icons/circle.svg" alt="" />
+              <div class="absolute">
+                <span class="text-5xl">6</span><span class="text-3xl">d</span>
+                <div class="pl-1 text-slate-400">of 6d</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between m-5 mt-15">
+        <div class="text-2xl font-semibold text-slate-600">My requests</div>
+        <div class="text-sm font-medium text-sky-400">Go to all Requests</div>
+      </div>
+
+      <div class="flex justify-center items-center flex-col mt-15 pb-15">
+        <img src="icons/bookicon.svg" alt="" />
+        <div class="font-semibold text-xl">
+          There are no registered requests.
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
